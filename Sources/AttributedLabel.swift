@@ -232,6 +232,7 @@ import UIKit
 //        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchDown)
         button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchUpInside)
         button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchUpOutside)
+        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchCancel)
 //        let singleFinger = UITapGestureRecognizer(
 //            target:self,
 //            action:#selector(handleDetectionAreaButtonClick))
