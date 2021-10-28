@@ -86,6 +86,7 @@ struct AttributtedLabelView_Previews: PreviewProvider
 
                 1. Some `code`
                 2. And data detectors  (801) 917 4444, email@dot.com and http://apple.com
+                3. "This other is loaded from remote URL: <img src=\"https://s.dou.ua/storage-files/image6_bCHHBMs.png\"></img> After img"
                 """
                     .style(tags: link)
                     .styleHashtags(link)
