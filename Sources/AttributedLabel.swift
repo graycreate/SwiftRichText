@@ -229,8 +229,9 @@ import UIKit
         #endif
         
         button.isUserInteractionEnabled = state.isEnabled
-        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchDown)
-//        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchUpInside)
+//        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchDown)
+        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchUpOutside)
 //        let singleFinger = UITapGestureRecognizer(
 //            target:self,
 //            action:#selector(handleDetectionAreaButtonClick))
